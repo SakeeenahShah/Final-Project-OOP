@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>GOGO ANIME!</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <header>
+    <nav>    <!-- navigation bar -->
+      <div class="nav-left">
+        <a href="index.html"><span style="font-family: onepiece, Arial, Helvetica, sans-serif; font-size: 24pt;">GOGO ANIME</span></a>
+      </div>
+      <div class="nav-center">
+        <input type="text" id="anime_input" placeholder="Enter anime/manga">
+        <button onclick="buttonClicked()">Enter</button>
+      </div>
+      <div class="nav-right">
+        <a href="index.html">Home</a>
+        <a href="watchlist.html" id="wishlist-link">Watchlist</a>
+      </div>
+    </nav>
+
+    <h1>⚔️ Anime Details ⚔️</h1>
+  </header>
+  
+  <main id="anime-details">
+    <button class="back-button" onclick="goBack()">Back</button>  <!-- button to go back to Home page -->
+    <div class="details-container">
+      <img id="anime-image" src="" alt="">
+      <div class="details-info">
+        <h2 id="anime-title"></h2> 
+        <!-- display all information about anime -->
+        <p><strong>Synopsis:</strong> <span id="synopsis"></span></p>
+        <p><strong>Score:</strong> <span id="score"></span></p>
+        <p><strong>Rank:</strong> <span id="rank"></span></p>
+        <p><strong>Popularity:</strong> <span id="popularity"></span></p>
+        <p><strong>Genres:</strong> <span id="genres"></span></p>
+        <p><strong>Producers:</strong> <span id="producers"></span></p>
+        <p><strong>Source:</strong> <span id="source"></span></p>
+        <p><strong>Rating:</strong> <span id="rating"></span></p>
+        <p><strong>Release Date:</strong> <span id="release-date"></span></p>
+        <p><strong>Link:</strong> <span id="mal-link"></span></p>
+
+        <!-- Add to Watchlist button -->
+        <button id="add-to-watchlist" onclick="promptAddToWatchlist()">Add to Watchlist</button>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3><span style="font-family: onepiece, Arial, Helvetica, sans-serif; font-size: 24pt;">GOGO ANIME</span></h3>
+        <p>Your go-to source for the latest and greatest <br>in anime and manga. From trending titles to timeless <br>classics, we've got you covered.</p>
+      </div>
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="watchlist.html" id="wishlist-link">Watchlist</a></li>
+        </ul>
+      </div>
+      <div class="footer-section contact">
+        <h3>Contact Us</h3>
+        <p>Email: contact@gogoanime.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2024 <span style="font-family: onepiece, Arial, Helvetica, sans-serif; font-size: 24pt;">GOGO ANIME</span> | Designed by GOGO ANIME Team
+    </div>
+  </footer>
+  
+  <script src="anime_details.js"></script> 
+</body>
+</html>
